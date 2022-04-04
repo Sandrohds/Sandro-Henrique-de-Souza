@@ -1,0 +1,9 @@
+.cabecalholink{
+    display: flex;
+    justify-content: space-between;
+}
+.botaoprincipal{
+    display: flex;
+    justify-content: space-between;
+}
+
