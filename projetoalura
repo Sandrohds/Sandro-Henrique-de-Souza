@@ -1,0 +1,272 @@
+# Sandro-Henrique-de-Souza<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Plus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? família=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class=" container principal">
+        <div class="container__caixa">
+            <h1>Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
+            <img src="img/Combo (1).png" alt="combo Alura" class="container__imagem">
+            <a href="www.alura.com" class="container__botao">Assine por 12x de R$ 120,00*</a>
+            <a href="www.alura.com" class="container__botao botao__secundaria">Assinar somente o Alura+</a>
+            <p class="preco">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
+        </div> 
+    </section>
+    <section class="container secundaria">
+        <img src="img/Plataformas.png" alt="plataforma aluta" class="secundario__imagem">
+        <div class="container__descricao">
+            <h2 class="descricao__titulo">Assista do seu jeito</h2>
+            <p class="descricao__titulo subtitulo" >Aproveite a tela grande da TV ou assista no tablet, laptop, 
+                celular e outros aparelhos. Nossa seleção de cursos não para de crescer.</p>
+        </div>
+    </section>
+
+    <section class="container terceira">
+        <div class="combo">
+            <p class="combotexto">Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos 
+                de diversas áreas da tecnologia e aprender inglês ou espanhol, onde e como quiser.</p>
+            <a href="www.alura.com" class="combobotao botao__secundaria">Assine o Combo+</a>
+        </div>
+        <img src="img/Telas.png" alt="telas do combo" class="combotelas">
+    </section>
+
+    <section class="container secundaria">
+        <img src="img/Notebook.png" alt="Notebook" class="secundario__imagem">
+        <div class="container__descricao">
+           <h3 class="descricao__titulo">Baixe seus cursos</h3>
+           <p class="descricao__titulo subtitulo">Baixe e assista quando e onde quiser. Assim, 
+               seus favoritos estão sempre com você, até mesmo sem internet.</p>
+            
+        </div>  
+    </section>
+
+    <section class="dispositivos">
+        <h4 class="dispositivo__titulo">Disponível nos seus dispositivos favoritos</h4>
+        <ul class="dispositivos__lista">
+            <li>
+                <img src="img/tv.png" alt="tv alura" class="tvalura">
+                <h5 class="lista__item">Tv</h5>
+             </li>
+            <li>
+                <img src="img/computador.png" alt="computadores alura" class="computadoresalura">
+                 <h5 class="lista__item">Computadores</h5>
+            </li>
+            <li>
+                <img src="img/celular.png" alt="celular Alura" class="celularalura"> 
+                <h5 class="lista__item">Celulares e tablets</h5>
+            </li> 
+        </ul>
+    </section>
+    <footer class="rodape">
+        <div class="logoalura">
+        <img   src="img/logo.png" alt="logo Alura" >
+        </div>
+        <ul class="rodape__lista">
+            <li class="lista__link">
+               <a href="#"> Idioma</a>
+            </li>
+
+            <li class="lista__link">
+               <a href="#"> Dispositivos compatíveis </a>
+            </li>
+
+               <li  class="lista__link"> 
+                 <a href="#"> Contrato de assinatura </a>
+            </li>
+
+              <li  class="lista__link"> 
+                 <a href="#"> Politica de privacidade </a>
+            </li> 
+
+               <li  class="lista__link">
+                <a href="#">Proteção de dados no Brasil </a>
+            </li>
+
+            <li  class="lista__link">  
+                 <a href="#"> Anuncios personalizados</a>
+            </li>
+
+            <li  class="lista__link">
+               <a href="#"> Ajuda</a>
+
+            </li>
+            
+        </ul>
+
+        <div class="rodape__texto">
+            <p class="registrada">&reg; 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. 
+            Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+
+            <p class="rodape__texto texto"> Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., 
+            Rua Vergueiro, 3185 <br>- Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
+        </div>
+    </footer>
+</body>
+</html>
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario:  #C0C0C0;
+    --botao-azul:  #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;;
+
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__botao {
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.botao__secundaria{
+    border: 1px solid #C0C0C0;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 1em;
+    color:#FFFFFF
+    
+}
+.preco{
+    font-size: 12px;
+    color: #C0C0C0;
+    text-align: center;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.secundario__imagem{
+    width: 80%;
+}
+.secundaria{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.subtitulo{
+    font-weight: 400;
+    font-size: 16px;
+    color: #C0C0C0;
+    
+}
+
+.combotelas{
+    width: 80%;
+}
+
+.terceira{
+    padding: 2em ;
+    align-items: center;
+    
+}
+
+.combobotao{
+    margin-top: 1em;
+    display: inline-block;
+    border: 1px solid #C0C0C0;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color:#FFFFFF
+}
+.combotexto{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.dispositivos{
+   text-align: center;
+}
+.dispositivos__lista{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 32px;
+    font-weight: 700;
+}
+.dispositivo__titulo{
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.logoalura{
+    text-align: center;
+}
+
+
+.rodape__texto{
+    text-align: center;
+    font-size: 14px;
+}
+.texto{
+    margin: 1em;
+}
+ .rodape__lista{
+     display: flex;
+     justify-content: center;
+     list-style-type: none;
+     margin-top: 1em;
+     
+ }
+ .registrada{
+     margin-top: 1em;
+ }
+
+ .lista__link a{
+     text-align: center;
+    text-decoration: none;
+    color: #C0C0C0;
+    margin-left: 1em;
+ }
+
+ .lista__link a:hover{
+     color: aqua;
+ }
